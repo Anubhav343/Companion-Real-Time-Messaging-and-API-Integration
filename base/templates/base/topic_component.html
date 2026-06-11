@@ -1,0 +1,24 @@
+<div class="topics">
+    <div class="topics__header">
+        <h2>Browse Topics</h2>
+    </div>
+    <ul class="topics__list">
+        <li>
+            <a href="{%url 'home'%}" class="active">All Topics<span>{{topics.count}}</span></a>
+        </li>
+        {% for topic in topics %}
+        <li>
+            <a href="{% url 'home' %}?q={{topic.name}}">{{topic.name}} <span>{{topic.room_set.count}}</span></a>
+        </li>
+        {%endfor%}
+    </ul>
+    <a class="btn btn--link" href="{% url 'topics' %}">
+        More
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <title>arrow-right-slim</title>
+            <path d="M11.293 4.707L17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z">
+            </path>
+        </svg>
+        </svg>
+    </a>
+</div>

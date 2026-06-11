@@ -1,0 +1,49 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Environment Variables
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+.mypy_cache/
+
+# Django
+db.sqlite3
+db.sqlite3-journal
+db.sqlite3-wal
+db.sqlite3-shm
+media/
+staticfiles/
+
+# Node (Frontend Assets)
+node_modules/
+
+# Redis
+*.rdb
+
+# IDE
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Packaging
+*.egg-info/
+dist/
+build/
+
+# Jupyter (optional)
+.ipynb_checkpoints/
