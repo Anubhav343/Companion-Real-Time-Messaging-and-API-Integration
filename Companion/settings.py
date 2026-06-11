@@ -32,6 +32,9 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig',
     'api.apps.ApiConfig',
     
+    'cloudinary_storage',
+    'cloudinary',
+
     'rest_framework',
     'rest_framework_simplejwt',                 
     'rest_framework_simplejwt.token_blacklist',
@@ -152,6 +155,11 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 MEDIA_URL = '/media/' 
 
 MEDIA_ROOT = BASE_DIR / 'media'
+
+CLOUDINARY_STORAGE = {
+    'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 CORS_ALLOWED_ORIGINS = env.list('CORS_ALLOWED_ORIGINS', default=[
     'http://localhost:3000',
