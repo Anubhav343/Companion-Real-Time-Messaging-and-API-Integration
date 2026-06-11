@@ -172,8 +172,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const roomId = JSON.parse(roomIdElement.textContent);
     const currentUserId = userIdElement ? JSON.parse(userIdElement.textContent) : null;
 
+    const wsProtocol = window.location.protocol === 'https:' ? 'wss://' : 'ws://';
+
     const chatSocket = new WebSocket(
-        'ws://' + window.location.host + '/ws/chat/' + roomId + '/'
+        wsProtocol + window.location.host + '/ws/chat/' + roomId + '/'
     );
 
     const typingIndicator = document.getElementById('typing-indicator');
