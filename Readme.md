@@ -4,6 +4,12 @@ Companion is a full-stack community discussion platform inspired by Reddit, buil
 
 Users can create discussion rooms, participate in conversations, browse topics, manage profiles, and interact through real-time chat. The project gradually evolved from a classic Django monolith into a system that also exposes REST APIs and supports WebSocket-based communication using Django Channels.
 
+<img width="1536" height="812" alt="image" src="https://github.com/user-attachments/assets/f786a639-9685-4e37-a8b8-d894e86c726b" />
+<img width="1536" height="815" alt="image" src="https://github.com/user-attachments/assets/22b5242c-0968-4170-8762-b6320419b419" />
+<img width="1536" height="813" alt="image" src="https://github.com/user-attachments/assets/a1eaa2e9-5eda-4597-8e79-7fe28ec0d431" />
+<img width="1536" height="765" alt="image" src="https://github.com/user-attachments/assets/42afcd8f-cfc3-4036-a13b-10667927a780" />
+
+
 ## Features
 
 * User registration and authentication
